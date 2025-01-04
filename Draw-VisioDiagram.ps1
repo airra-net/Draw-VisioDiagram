@@ -35,6 +35,12 @@
     Website:        blogs.airra.net
     Creation Date:  02.01.2025
     Purpose/Change: Reorganize script. Add to Line Object Workflow - LinePattern Properties.
+
+    Version:        3.4
+    Author:         Andrii Romanenko
+    Website:        blogs.airra.net
+    Creation Date:  04.01.2025
+    Purpose/Change: Reorganize script. Add to Item Object Workflow - LineWeight Properties.
 ...
    
 .EXAMPLE
@@ -118,7 +124,8 @@ ForEach ($ItemNode in $ItemsNodes) {
                 -ParaHorzAlign $ItemNode.Attributes['ParaHorzAlign'].value `
                 -CharSize $ItemNode.Attributes['CharSize'].value `
                 -CharColor $ItemNode.Attributes['CharColor'].value `
-                -LineColor $ItemNode.Attributes['LineColor'].value
+                -LineColor $ItemNode.Attributes['LineColor'].value `
+                -LineWeight $ItemNode.Attributes['LineWeight'].value
         }
 
         "Line" { 
