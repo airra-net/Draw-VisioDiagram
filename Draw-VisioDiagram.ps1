@@ -30,6 +30,11 @@
     Creation Date:  07.09.2022
     Purpose/Change: Begin Reorganize script.
 
+    Version:        3.3
+    Author:         Andrii Romanenko
+    Website:        blogs.airra.net
+    Creation Date:  02.01.2025
+    Purpose/Change: Reorganize script. Add to Line Object Workflow - LinePattern Properties.
 ...
    
 .EXAMPLE
@@ -123,7 +128,8 @@ ForEach ($ItemNode in $ItemsNodes) {
                 -EndX $ItemNode.Attributes['EndX'].value `
                 -EndY $ItemNode.Attributes['EndY'].value `
                 -LineWeight $ItemNode.Attributes['LineWeight'].value `
-                -LineColor $ItemNode.Attributes['LineColor'].value 
+                -LineColor $ItemNode.Attributes['LineColor'].value `
+                -LinePattern $ItemNode.Attributes['LinePattern'].value
                 
         }
                 
